@@ -84,7 +84,7 @@ function HowWork() {
                 <div ref={elementRef1} className="mt-10 w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-r from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
                     <div className="items-center gap-12 h-[inherit] w-full justify-center lg:justify-normal lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
                         <img src={headset} className="w-40" />
-                        <div className="text-white sm:text-left w-3/5 lg:w-1/2">
+                        <div className="text-white sm:text-left w-4/5 lg:w-1/2">
                             <h1 className="text-[40px] font-['Roboto-Bold']">BRIEFING</h1>
                             <p className="text-[20px] font-['Roboto-Light']">Após a contratação do serviço, agendamos uma reunião de briefing para juntos elaborarmos um documento que detalhe todas as necessidades do projeto. No fim dessa reunião, estabelecemos como o cliente nos fornecerá o material necessário para o site.</p>
                         </div>
@@ -93,7 +93,7 @@ function HowWork() {
 
                 <div ref={elementRef2} className="w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-l ml-auto from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
                     <div className="items-center gap-12 h-[inherit] w-full justify-center lg:justify-end lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
-                        <div className="text-white sm:text-right w-3/5 lg:w-1/2 order-2 sm:order-1">
+                        <div className="text-white sm:text-right w-4/5 lg:w-1/2 order-2 sm:order-1">
                             <h1 className="text-[40px] font-['Roboto-Bold']">EXECUÇÃO</h1>
                             <p className="text-[20px] font-['Roboto-Light']">Durante a execução, utilizamos o documento de briefing e os materiais fornecidos pelo cliente para criar o site de acordo com o escopo do projeto.</p>
                         </div>
@@ -104,7 +104,7 @@ function HowWork() {
                 <div ref={elementRef3} className="w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-r from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
                     <div className="items-center gap-12 h-[inherit] py-4 w-full justify-center lg:justify-normal lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
                         <img src={change} className="w-40" />
-                        <div className="text-white sm:text-left w-3/5 lg:w-1/2">
+                        <div className="text-white sm:text-left w-4/5 lg:w-1/2">
                             <h1 className="text-[40px] font-['Roboto-Bold']">ALTERAÇÕES</h1>
                             <p className="text-[20px] font-['Roboto-Light']">Processo típico em qualquer projeto, agora é a hora do cliente examinar nosso trabalho e propor as alterações necessárias.</p>
                         </div>
@@ -113,7 +113,7 @@ function HowWork() {
 
                 <div ref={elementRef4} className="w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-l ml-auto from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
                     <div className="items-center gap-12 h-[inherit] py-4 w-full justify-center lg:justify-end lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
-                        <div className="text-white sm:text-right w-3/5 lg:w-1/2 order-2 sm:order-1">
+                        <div className="text-white sm:text-right w-4/5 lg:w-1/2 order-2 sm:order-1">
                             <h1 className="text-[40px] font-['Roboto-Bold']">FINALIZAÇÃO E PUBLICAÇÃO</h1>
                             <p className="text-[20px] font-['Roboto-Light']">Com a aprovação do projeto, publicamos o site no endereço final do cliente, enviamos o backup e uma planilha com os dados de acesso.</p>
                         </div>

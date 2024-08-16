@@ -43,15 +43,15 @@ function SliderHead(){
         <section className="w-full h-[700px]">
             <img src={slide1} className='w-full h-full'/>
             <div className='absolute bg-gradient-to-r from-black-opacity-06 to-transparent h-[700px] w-full top-0'>
-                <div className='relative top-48 md:top-1/3 text-white text-[36px] text-left w-4/5 ml-auto mr-auto max-w-[1280px]'>
+                <div className='relative top-48 md:top-1/3 text-white text-[25px] sm:text-[36px] text-left w-4/5 ml-auto mr-auto max-w-[1280px]'>
                 <div ref={elementRef} className='w-full md:w-4/5 lg:w-3/5 2xl:w-1/2 transition-all duration-1000 -ml-44 opacity-0'>
                     <h1 className='font-["Roboto-Bold"] leading-snug'>
                         DEIXE SUA MARCA NA WEB COM UM<br/>
                         SITE PROJETADO EXCLUSIVAMENTE<br/>
-                        <span className='text-pink-rgb text-[42px]'>PARA VOCÊ.</span>
+                        <span className='text-pink-rgb text-[36px] sm:text-[42px]'>PARA VOCÊ.</span>
                     </h1>
                     <p className='font-["Roboto-Light"] text-[20px] mt-3'>Agência de criação de sites web, mobile e plataformas digitais para empresas, focada em inovação e resultados excepcionais.</p>
-                    <button className='px-5 py-2 text-[20px] hover:bg-black hover:border-pink-rgb hover:text-pink-rgb border-2 border-transparent font-["Roboto-Medium"] bg-pink-rgb rounded-md'>Peça um Orçamento</button>
+                    <button className='px-5 py-2 text-[20px] mt-4 sm:mt-0 hover:bg-black hover:border-pink-rgb hover:text-pink-rgb border-2 border-transparent font-["Roboto-Medium"] bg-pink-rgb rounded-md'>Peça um Orçamento</button>
                     </div>
                 </div>
             </div>

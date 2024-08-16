@@ -15,7 +15,7 @@ function NavBar(){
             <div className='w-4/5 h-full flex max-w-[1280px] ml-auto mr-auto'>
             <div className="w-full h-full flex items-center justify-between">
             <div>
-                <img src={logo}/>
+                <img src={logo} className='w-3/4 md:w-full'/>
             </div>
             <div className='block lg:hidden' onClick={expandNav}>
             <svg xmlns="http://www.w3.org/2000/svg" className='w-8' fill='white' viewBox="0 0 448 512">
