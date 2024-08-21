@@ -1,4 +1,5 @@
 import '../App.css';
+import Footer from '../components/Footer';
 import HowWork from '../components/HowWork';
 import PortifolioHome from '../components/PortfolioHome';
 import SliderHead from '../components/SliderHead';
@@ -11,6 +12,7 @@ function App() {
       <WhoAre/>
       <HowWork/>
       <PortifolioHome/>
+      <Footer/>
     </div>
   );
 }

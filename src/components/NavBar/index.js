@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import logo from '../../img/Logo HeadLine.svg'
 import './App.css'
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom'
+>>>>>>> 0c8b9a2 (commit to site)
 
 function NavBar(){
 
@@ -24,11 +28,20 @@ function NavBar(){
             </div>
             <div className='w-fit hidden lg:block'>
                 <nav className='w-fit'>
+<<<<<<< HEAD
                     <ul className='list-none flex text-white gap-8 xl:gap-14 font-["Roboto-Medium"] font-light'>
                         <li className='cursor-pointer'>HOME</li>
                         <li className='cursor-pointer'>PORTIFÓLIO</li>
                         <li className='cursor-pointer'>PREÇOS</li>
                         <li className='cursor-pointer'>SERVIÇOS</li>
+=======
+                    <ul className='list-none flex text-white gap-4 xl:gap-14 font-["Roboto-Medium"] font-light'>
+                        <li className='cursor-pointer'><Link to="/">HOME</Link></li>
+                        <li className='cursor-pointer'><Link to="">SERVIÇOS</Link></li>
+                        <li className='cursor-pointer'><Link to="/portfolio">PORTIFÓLIO</Link></li>
+                        <li className='cursor-pointer'><Link to="/about">SOBRE NÓS</Link></li>
+                        <li className='cursor-pointer'><Link to="/contact">CONTATO</Link></li>
+>>>>>>> 0c8b9a2 (commit to site)
                     </ul>
                 </nav>
             </div>
@@ -41,10 +54,18 @@ function NavBar(){
             <div className={`w-full ${navBarMobile ? 'pt-8 pb-8 h-auto' : 'pt-0 pb-0 h-0'} bg-red-rgb block overflow-hidden lg:hidden`}>
             <nav className='w-fit ml-auto mr-auto'>
                     <ul className='list-none flex flex-col items-center text-white gap-8 xl:gap-14 font-["Roboto-Medium"] font-light'>
+<<<<<<< HEAD
                         <li className='cursor-pointer'>HOME</li>
                         <li className='cursor-pointer'>PORTIFÓLIO</li>
                         <li className='cursor-pointer'>PREÇOS</li>
                         <li className='cursor-pointer'>SERVIÇOS</li>        
+=======
+                       <li className='cursor-pointer'><Link to="/">HOME</Link></li>
+                        <li className='cursor-pointer'><Link to="">SERVIÇOS</Link></li>
+                        <li className='cursor-pointer'><Link to="/portfolio">PORTIFÓLIO</Link></li>
+                        <li className='cursor-pointer'><Link to="/about">SOBRE NÓS</Link></li>
+                        <li className='cursor-pointer'><Link to="/contact">CONTATO</Link></li>     
+>>>>>>> 0c8b9a2 (commit to site)
                         <li><button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></li>
 
                     </ul>
