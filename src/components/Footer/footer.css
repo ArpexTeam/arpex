@@ -1,8 +1,0 @@
-.footerArea::before{
-    content: '';
-    height: 1px;
-    width: 100%;
-    background-image: linear-gradient(to right ,white, black);
-    display: block;
-    margin-bottom: 96px;
-}
