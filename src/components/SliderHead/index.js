@@ -1,16 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import slide1 from '../../img/Imagem Headline.jpg'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import './App.css';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 function SliderHead(){
@@ -51,21 +41,7 @@ function SliderHead(){
 
     return(
         <section className="w-full h-[700px]">
-
-<Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>       
-             <img src={slide1} className='w-full h-full'/>
+            <img src={slide1} className='w-full h-full'/>
             <div className='absolute bg-gradient-to-r from-black-opacity-06 to-transparent h-[700px] w-full top-0'>
                 <div className='relative top-48 md:top-1/3 text-white text-[25px] sm:text-[36px] text-left w-4/5 ml-auto mr-auto max-w-[1280px]'>
                 <div ref={elementRef} className='w-full md:w-4/5 lg:w-3/5 2xl:w-1/2 transition-all duration-1000 -ml-44 opacity-0'>
@@ -78,10 +54,7 @@ function SliderHead(){
                     <button className='px-5 py-2 text-[20px] mt-4 sm:mt-0 hover:bg-black hover:border-pink-rgb hover:text-pink-rgb border-2 border-transparent font-["Roboto-Medium"] bg-pink-rgb rounded-md'>Peça um Orçamento</button>
                     </div>
                 </div>
-            </div></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-      </Swiper>
-
+            </div>
         </section>
     )
 }
