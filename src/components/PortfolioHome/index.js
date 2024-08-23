@@ -3,7 +3,7 @@ import './App.css'
 
 function PortifolioHome(){
     return(
-        <div className="w-full bg-black pt-44">
+        <div className="w-full bg-black pt-44 pb-12 ">
             <div className="w-4/5 ml-auto mr-auto max-w-[1280px]">
                 <h1 className="text-[48px] font-['Roboto-Bold'] text-pink-rgb">Portfólio</h1>
                 <p className="text-[20px] font-['Roboto-Light'] text-white">Confira alguns dos websites desenvolvidos recentemente por nós</p>
