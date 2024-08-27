@@ -1,4 +1,24 @@
 import React, { useState } from 'react';
+import QuestionCard from '../QuestionCard';
+
+const questions = [
+    {
+        q: 'Qual é o custo para criar um site?',
+        a: 'O custo para criar um site pode variar dependendo de vários fatores, como a quantidade de páginas, a complexidade do site e as funcionalidades que você deseja incluir. Por isso entre em contato conosco para podermos entender melhor suas necessidades.'
+    },
+    {
+        q: 'Qual é o prazo médio para desenvolvimento de um site?',
+        a: ''
+    },
+    {
+        q: 'Vocês oferecem suporte e manutenção contínuos?',
+        a: ''
+    },
+    {
+        q: 'Vocês oferecem suporte e manutenção contínuos?',
+        a: 'Depois que seu site for lançado, é importante garantir que ele esteja funcionando corretamente e recebendo atualizações regulares. Por isso oferecemos o serviços de manutenção de sites aqui na agência e esse serviço é opcional.'
+    },
+]
 
 function EntrarContato() {
     const [formData, setFormData] = useState({
@@ -20,27 +40,7 @@ function EntrarContato() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aqui você pode adicionar a lógica para validar e enviar os dados, por exemplo:
-        // enviar dados usando fetch ou axios
         console.log('Dados enviados:', formData);
-
-        // Exemplo com fetch:
-        /*
-        fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
-        */
     };
 
     return (
@@ -64,7 +64,7 @@ function EntrarContato() {
                             <input
                                 type="text"
                                 id="name"
-                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3"
+                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3 border-b-[#ED4264] border-b-2"
                                 value={formData.name}
                                 onChange={handleChange}
                             />
@@ -74,7 +74,7 @@ function EntrarContato() {
                             <input
                                 type="text"
                                 id="lastName"
-                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3"
+                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3 border-b-[#ED4264] border-b-2"
                                 value={formData.lastName}
                                 onChange={handleChange}
                             />
@@ -84,7 +84,7 @@ function EntrarContato() {
                             <input
                                 type="email"
                                 id="email"
-                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3"
+                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3 border-b-[#ED4264] border-b-2"
                                 value={formData.email}
                                 onChange={handleChange}
                             />
@@ -94,7 +94,7 @@ function EntrarContato() {
                             <input
                                 type="tel"
                                 id="phone"
-                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3"
+                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3 border-b-[#ED4264] border-b-2"
                                 value={formData.phone}
                                 onChange={handleChange}
                             />
@@ -104,7 +104,7 @@ function EntrarContato() {
                             <input
                                 type="text"
                                 id="needs"
-                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3"
+                                className="bg-[#2A2A2A] w-full h-12 rounded-[10px] px-3 border-b-[#ED4264] border-b-2"
                                 value={formData.needs}
                                 onChange={handleChange}
                             />
@@ -113,7 +113,7 @@ function EntrarContato() {
                             <label htmlFor="obs" className="pl-3 pb-1 text-[14px]">Observações</label>
                             <textarea
                                 id="obs"
-                                className="bg-[#2A2A2A] w-full rounded-[10px] px-3 resize-none p-2 h-32"
+                                className="bg-[#2A2A2A] w-full rounded-[10px] px-3 resize-none p-2 h-32 border-b-[#ED4264] border-b-2"
                                 value={formData.obs}
                                 onChange={handleChange}
                             />
@@ -124,9 +124,15 @@ function EntrarContato() {
                     </form>
                 </div>
             </div>
-            <div>
-                <div className="">
-                   <span className='text-[48px] text-[#ED4264]'> DÚVIDAS FRENQUENTES</span>
+            <div className='mt-10  px-2 lg:px-52 text-white'>
+                <div className="mt-10">
+                    <span className='text-[48px] text-[#ED4264]'> DÚVIDAS FRENQUENTES</span>
+                </div>
+                <div className="flex flex-col gap-5">
+                    {questions.map(e => (
+                        <QuestionCard question={e.q} answer={e.a} />
+                    ))}
+
                 </div>
             </div>
         </div>
