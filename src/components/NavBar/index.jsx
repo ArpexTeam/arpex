@@ -16,7 +16,7 @@ function NavBar(){
             <div className='w-4/5 h-full flex max-w-[1280px] ml-auto mr-auto'>
             <div className="w-full h-full flex items-center justify-between">
             <div>
-                <img src={logo} className='w-3/4 md:w-full'/>
+                <Link to="/"><img src={logo} className='w-3/4 md:w-full cursor-pointer transition-all hover:scale-105'/></Link>
             </div>
             <div className='block lg:hidden' onClick={expandNav}>
             <svg xmlns="http://www.w3.org/2000/svg" className='w-8' fill='white' viewBox="0 0 448 512">
@@ -27,7 +27,7 @@ function NavBar(){
                 <nav className='w-fit'>
                     <ul className='list-none flex text-white gap-4 xl:gap-14 font-["Roboto-Medium"] font-light'>
                         <li className='cursor-pointer'><Link to="/">HOME</Link></li>
-                        <li className='cursor-pointer'><Link to="">SERVIÇOS</Link></li>
+                        <li className='cursor-pointer'><Link to="/services">SERVIÇOS</Link></li>
                         <li className='cursor-pointer'><Link to="/portfolio">PORTIFÓLIO</Link></li>
                         <li className='cursor-pointer'><Link to="/about">SOBRE NÓS</Link></li>
                         <li className='cursor-pointer'><Link to="/contact">CONTATO</Link></li>
@@ -35,7 +35,7 @@ function NavBar(){
                 </nav>
             </div>
             <div className='lg:block hidden'>
-                <button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button>
+                <a href='https://wa.me/:5519998524426' target='__blank'><button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></a>
             </div>
             </div>
             
@@ -44,7 +44,7 @@ function NavBar(){
             <nav className='w-fit ml-auto mr-auto'>
                     <ul className='list-none flex flex-col items-center text-white gap-8 xl:gap-14 font-["Roboto-Medium"] font-light'>
                        <li className='cursor-pointer'><Link to="/">HOME</Link></li>
-                        <li className='cursor-pointer'><Link to="">SERVIÇOS</Link></li>
+                        <li className='cursor-pointer'><Link to="services">SERVIÇOS</Link></li>
                         <li className='cursor-pointer'><Link to="/portfolio">PORTIFÓLIO</Link></li>
                         <li className='cursor-pointer'><Link to="/about">SOBRE NÓS</Link></li>
                         <li className='cursor-pointer'><Link to="/contact">CONTATO</Link></li>     

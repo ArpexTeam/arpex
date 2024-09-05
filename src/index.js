@@ -8,6 +8,8 @@ import NavBar from './components/NavBar';
 import Contact from './pages/Contact/index';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
+import Footer from './components/Footer';
+import ServicesPage from './pages/ServicesPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +22,10 @@ root.render(
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/services" element={<ServicesPage/>}/>
       </Routes>
+      <Footer/>
+
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -13,7 +13,9 @@ module.exports = {
         'pink-rgb': 'rgba(237, 66, 100, 1)',
         'white-rgb-02':'rgba(255, 255, 255, 0.2)',
         'black-rgb-01':'rgba(16, 15, 18, 0.1)',
-        'input-opacity':'rgba(217,217,217, 0.2)'
+        'input-opacity':'rgba(217,217,217, 0.2)',
+        'white-rgb-025':'rgba(255, 255, 255, 0.25)',
+        'white-rgb-008':'rgba(255, 255, 255, 0.08)'
       }
     },
   },

@@ -16,7 +16,6 @@ function App() {
       <PortifolioHome />
       <WebsiteInfo />
       <EntrarContato/>
-      <Footer/>
     </div>
   );
 }
