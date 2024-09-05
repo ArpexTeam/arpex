@@ -47,11 +47,11 @@ function Footer(){
                     <div className='w-fit'>
                     <p className='font-["Roboto-Bold"] text-[16px] w-fit ml-auto mr-auto lg:ml-0 lg:mr-0'>INSTITUCIONAL</p>
                     <ul className='list-none justify-center w-fit md:justify-start flex flex-row md:flex-col gap-4 mt-8 flex-wrap sm:flex-nowrap'>
-                        <li className='hover:text-pink-rgb cursor-pointer'>HOME</li>
-                        <li className='hover:text-pink-rgb cursor-pointer'>SERVIÇOS</li>
-                        <li className='hover:text-pink-rgb cursor-pointer'>PORTFÓLIO</li>
-                        <li className='hover:text-pink-rgb cursor-pointer'>SOBRE NÓS</li>
-                        <li className='hover:text-pink-rgb cursor-pointer'>CONTATO</li>
+                        <li className='hover:text-pink-rgb cursor-pointer'><Link to="/">HOME</Link></li>
+                        <li className='hover:text-pink-rgb cursor-pointer'><Link to="services">SERVIÇOS</Link></li>
+                        <li className='hover:text-pink-rgb cursor-pointer'><Link to="portfolio">PORTFÓLIO</Link></li>
+                        <li className='hover:text-pink-rgb cursor-pointer'><Link to="/about">SOBRE NÓS</Link></li>
+                        <li className='hover:text-pink-rgb cursor-pointer'><Link to="/contact">CONTATO</Link></li>
 
                     </ul>
                     </div>
