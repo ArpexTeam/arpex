@@ -14,9 +14,9 @@ function Contact(){
     // Send email using EmailJS
     emailjs.sendForm('service_s1o0txb', 'template_lwwcs0j', form.current, "3LMwgby-wb7Qm4GSh" )
       .then(function(response) {
-        alert('Email sent successfully!');
+        alert('Email enviado com sucesso!');
       }, function(error) {
-        alert('Failed to send email. Please try again.');
+        alert('Falha ao enviar o email. Tente novamente');
         console.log('FAILED...', error);
       });
 

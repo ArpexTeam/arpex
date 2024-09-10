@@ -13,12 +13,12 @@ const questions = [
     {
         id:'2',
         q: 'Qual é o prazo médio para desenvolvimento de um site?',
-        a: ''
+        a: 'O prazo médio para o desenvolvimento de um site pode variar de acordo com sua complexidade, o número de páginas e as funcionalidades desejadas. Normalmente, um site institucional pode ser concluído em algumas semanas, enquanto projetos mais complexos, como lojas virtuais ou portais personalizados, podem levar alguns meses. Porém o diferencial de nossa empresa é a agilidade, entregando em um prazo menor do que o resto do mercado. Entre em contato conosco para uma estimativa personalizada'
     },
     {
         id:'3',
-        q: 'Vocês oferecem suporte e manutenção contínuos?',
-        a: ''
+        q: 'Quais são as etapas envolvidas no desenvolvimento de um site?',
+        a: 'O desenvolvimento de um site envolve várias etapas essenciais, desde a definição dos objetivos e o planejamento do design até a codificação, testes e lançamento. Cada fase é cuidadosamente planejada para garantir que o site atenda às suas necessidades específicas e ofereça uma experiência de usuário excepcional.'
     },
     {
         id:'4',
@@ -82,9 +82,9 @@ function EntrarContato() {
     // Send email using EmailJS
     emailjs.sendForm('service_s1o0txb', 'template_lwwcs0j', form.current, "3LMwgby-wb7Qm4GSh" )
       .then(function(response) {
-        alert('Email sent successfully!');
+        alert('Email enviado com sucesso!');
       }, function(error) {
-        alert('Failed to send email. Please try again.');
+        alert('Falha ao enviar email. Tente novamente.');
         console.log('FAILED...', error);
       });
 

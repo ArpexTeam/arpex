@@ -24,8 +24,7 @@ function QuestionCard({ id, question, answer }) {
              
 
                 element.classList.toggle('hovered');
-                element2.style.height = "100px";
-
+                element2.style.height = `${element2.scrollHeight}px`;
 
             }
 

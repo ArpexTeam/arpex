@@ -11,7 +11,7 @@ function ServicesPage() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
             }}
-            className="relative top-20 w-screen"
+            className="relative top-20 w-full"
         >
             <div className='max-w-[1280px] ml-auto mr-auto pt-24 pb-52'>
 
@@ -26,8 +26,8 @@ function ServicesPage() {
                             className='w-64 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2'
                         />
                         <div className='flex flex-col justify-center h-full'>
-                            <h1 className='font-["Roboto-Bold"] text-[32px]'>Landing pages</h1><br />
-                            <p className='font-["Roboto-Light"] text-[24px]'>Fazemos a criação de sites profissionais para a sua empresa.</p>
+                            <h1 className='font-["Roboto-Bold"] text-[32px]'>Web sites</h1><br />
+                            <p className='font-["Roboto-Light"] text-[24px]'>Desenvolvemos sites profissionais para fortalecer sua presença online.</p>
                         </div>
                     </div>
 
@@ -39,7 +39,7 @@ function ServicesPage() {
                         />
                         <div className='flex flex-col justify-center h-full'>
                             <h1 className='font-["Roboto-Bold"] text-[32px]'>Landing pages</h1><br />
-                            <p className='font-["Roboto-Light"] text-[24px]'>Fazemos a criação de sites profissionais para a sua empresa.</p>
+                            <p className='font-["Roboto-Light"] text-[24px]'>Criamos landing pages que aumentam suas conversões.</p>
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@ function ServicesPage() {
                         />
                         <div className='flex flex-col justify-center h-full'>
                             <h1 className='font-["Roboto-Bold"] text-[32px]'>Ecommerce</h1><br />
-                            <p className='font-["Roboto-Light"] text-[24px]'>Fazemos a criação de sites profissionais para a sua empresa.</p>
+                            <p className='font-["Roboto-Light"] text-[24px]'>Montamos lojas virtuais práticas e seguras para suas vendas.</p>
                         </div>
                     </div>
                 </div>
