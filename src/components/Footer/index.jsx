@@ -29,7 +29,7 @@ function Footer(){
                     <div className='text-center sm:text-left'>
                         <p className='font-["Roboto-Bold"] text-[16px]'>INFORMAÇÕES DE CONTATO</p>
                         <p className='text-[14px] font-["Roboto-Light"] flex items-center mt-10'><img src={email} className='mr-4'/>contato@d&bwebsites.com.br</p>
-                        <a href='https://wa.me/:5519998524426' target='__blank'><p className='text-[14px] font-["Roboto-Light"] mt-10 flex items-center hover:text-pink-rgb'><img src={phone} className='mr-4'/>(19) 99852-4426</p></a>
+                        <a href='https://wa.me/5519998524426' target='__blank'><p className='text-[14px] font-["Roboto-Light"] mt-10 flex items-center hover:text-pink-rgb'><img src={phone} className='mr-4'/>(19) 99852-4426</p></a>
                     
                         <div className='flex mt-10 items-center justify-center sm:justify-start gap-4'>
                          

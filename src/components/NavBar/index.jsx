@@ -35,7 +35,7 @@ function NavBar(){
                 </nav>
             </div>
             <div className='lg:block hidden'>
-                <a href='https://wa.me/:5519998524426' target='__blank'><button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></a>
+                <a href='https://wa.me/5519998524426' target='__blank'><button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></a>
             </div>
             </div>
             

@@ -51,7 +51,7 @@ function SliderHead(){
                         <span className='text-pink-rgb text-[36px] sm:text-[42px]'>PARA VOCÊ.</span>
                     </h1>
                     <p className='font-["Roboto-Light"] text-[20px] mt-3'>Agência de criação de sites web, mobile e plataformas digitais para empresas, focada em inovação e resultados excepcionais.</p>
-                    <a href='https://wa.me/:5519998524426' target='__blank'><button className='px-5 py-2 text-[20px] mt-4 sm:mt-0 hover:bg-black hover:border-pink-rgb hover:text-pink-rgb border-2 border-transparent font-["Roboto-Medium"] bg-pink-rgb rounded-md'>Peça um Orçamento</button></a>
+                    <a href='https://wa.me/5519998524426' target='__blank'><button className='px-5 py-2 text-[20px] mt-4 sm:mt-0 hover:bg-black hover:border-pink-rgb hover:text-pink-rgb border-2 border-transparent font-["Roboto-Medium"] bg-pink-rgb rounded-md'>Peça um Orçamento</button></a>
                     </div>
                 </div>
             </div>
