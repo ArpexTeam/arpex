@@ -43,11 +43,11 @@ function NavBar(){
             <div className={`w-full ${navBarMobile ? 'pt-8 pb-8 h-auto' : 'pt-0 pb-0 h-0'} bg-red-rgb block overflow-hidden lg:hidden`}>
             <nav className='w-fit ml-auto mr-auto'>
                     <ul className='list-none flex flex-col items-center text-white gap-8 xl:gap-14 font-["Roboto-Medium"] font-light'>
-                       <li className='cursor-pointer'><Link to="/">HOME</Link></li>
-                        <li className='cursor-pointer'><Link to="services">SERVIÇOS</Link></li>
-                        <li className='cursor-pointer'><Link to="/portfolio">PORTIFÓLIO</Link></li>
-                        <li className='cursor-pointer'><Link to="/about">SOBRE NÓS</Link></li>
-                        <li className='cursor-pointer'><Link to="/contact">CONTATO</Link></li>     
+                       <li className='cursor-pointer' onClick={expandNav}><Link to="/">HOME</Link></li>
+                        <li className='cursor-pointer' onClick={expandNav}><Link to="services">SERVIÇOS</Link></li>
+                        <li className='cursor-pointer' onClick={expandNav}><Link to="/portfolio">PORTIFÓLIO</Link></li>
+                        <li className='cursor-pointer' onClick={expandNav}><Link to="/about">SOBRE NÓS</Link></li>
+                        <li className='cursor-pointer' onClick={expandNav}><Link to="/contact">CONTATO</Link></li>     
                         <li><button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></li>
 
                     </ul>
