@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import slide1 from '../../img/Imagem Headline.jpg'
+import slide1 from '../../img/ImagemHeadline.jpg';
+import background from '../../img/Background.jpg';
+
 
 
 
@@ -37,11 +39,18 @@ function SliderHead(){
           window.removeEventListener('scroll', handleScroll);
         };
       }, []);
-
+console.log(slide1);
+console.log(background);
 
     return(
-        <section className="w-full h-[700px]">
-            <img src={slide1} className='w-full h-full'/>
+<section className="w-full h-[700px]"
+  style={{
+    backgroundSize: 'cover',
+    backgroundImage: `url(${slide1})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition:'60% center'
+  }}>
+
             <div className='absolute bg-gradient-to-r from-black-opacity-06 to-transparent h-[700px] w-full top-0'>
                 <div className='relative top-48 md:top-1/3 text-white text-[25px] sm:text-[36px] text-left w-4/5 ml-auto mr-auto max-w-[1280px]'>
                 <div ref={elementRef} className='w-full md:w-4/5 lg:w-3/5 2xl:w-1/2 transition-all duration-1000 -ml-44 opacity-0'>

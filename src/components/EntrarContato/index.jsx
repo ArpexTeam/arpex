@@ -104,8 +104,8 @@ function EntrarContato() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center mt-7 w-4/5 lg:w-1/2">
-                    <span className="text-[#D3D3D3]">Preencha seus dados, que retornaremos em breve!</span>
+                <div className="flex flex-col items-center mt-7 w-full lg:w-1/2">
+                    <span className="text-[#D3D3D3] px-8">Preencha seus dados, que retornaremos em breve!</span>
                     <form ref={form} className="flex flex-col min-w-[30vw] w-10/12 bg-[#151515] rounded-[10px] mt-4 text-[#D3D3D3] gap-y-4" onSubmit={handleSubmit}>
                         <div className="flex flex-col items-start w-full px-6">
                             <label htmlFor="name" className="pl-3 pb-1 text-[14px]">Nome</label>
