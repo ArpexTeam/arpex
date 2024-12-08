@@ -1,14 +1,3 @@
-ul li::after{
-    content: '';
-    height: 1px;
-    width: 0;
-    background-color: rgba(237, 66, 100, 1);
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
-    transition: all 0.1s linear;
-}
-
-ul li:hover::after{
-    width: 100%;
+ul li:hover{
+    color: #00CF78;
 }

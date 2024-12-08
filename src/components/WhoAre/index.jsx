@@ -1,5 +1,6 @@
 import arrow from '../../img/SETA ROLAGEM.svg';
-import macBook from '../../img/MacBook Pro and iPhone 15 Pro Mockup.png';
+import notebook from '../../img/Notebook.png';
+import bgBackground from '../../img/bg-desenvolvimento.jpg';
 import { useEffect, useRef, useState } from 'react';
 
 function WhoAre() {
@@ -70,19 +71,38 @@ function WhoAre() {
     }, [isVisible, isVisibleImg, isVisibleText]);
 
     return (
-        <div className="w-full bg-black h-[1000px] md:h-[600px] overflow-hidden">
+        <div className="w-full h-[1000px] md:h-[600px] overflow-hidden"
+        style={{
+            backgroundSize: 'cover',
+            backgroundImage: `url(${bgBackground})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition:'45% center'
+          }}
+        >
             <div className='max-w-[1280px] ml-auto mr-auto h-full'>
             <div ref={elementRef} className="w-24 -mt-12 sm:-mt-16 h-[0] transition-all duration-1000 bg-gradient-to-b from-pink-rgb to-transparent left-0 right-0 ml-auto mr-auto absolute">
                 <img src={arrow} className='ml-auto mr-auto mt-4' />
             </div>
             <div className='w-4/5 flex flex-col justify-center md:flex-row ml-auto mr-auto h-full items-center'>
-                <div className='w-full order-2 md:order-1 md:w-1/2 transition-all duration-1000 -left-32 relative opacity-0' ref={elementRefImg}>
-                    <img src={macBook} className='h-min'/>
+                <div className='w-full order-2 md:order-2 md:w-1/2 transition-all duration-1000 -left-32 relative opacity-0' ref={elementRefImg}>
+                    <img src={notebook} className='h-min ml-auto w-3/4'/>
                 </div>
-                <div className='text-left w-full order-1 md:order-2 md:w-1/2 transition-all duration-1000 -right-32 relative opacity-0' ref={elementRefText}>
-                    <h1 className='font-["Roboto-Bold"] text-pink-rgb text-[48px]'>Quem Somos?</h1>
-                    <p className='font-["Roboto-Light"] text-[20px] ml-12 text-white'>Somos uma agência de criação de sites dedicada a transformar suas ideias em realidade digital. Com uma equipe experiente e apaixonada pelo que faz, focamos em oferecer soluções personalizadas para que o seu site se destaque no mercado.</p>
-                </div>
+                <div className='text-left w-full order-1 md:order-1 md:w-1/2 transition-all duration-1000 -right-32 relative opacity-0' ref={elementRefText}>
+                    <h2 className='font-["Roboto-Bold"] text-white text-[36px]'>Desenvolvimento de sites</h2><br/>
+                    <h3 className='font-["Roboto-Medium"] text-white text-[26px]'>Sites personalizados, desenvolvidos para impulsionar os resultados do seu negócio</h3><br/>
+                    <p className='font-["Roboto-Light"] text-[16px] text-white'>Em um mercado cada vez mais digital, um site bem planejado é mais do que um simples canal - é a porta
+                        de entrada para novos clientes, o elo entre sua empresa e o público<br/><br/>
+
+                        Criamos sites sob medida, desenvolvidos para refletir a identidade e os valores da sua marca, ao mesmo tempo
+                        em que entregam uma experiência intuitiva e envolvente<br/><br/>
+
+                        Ter um site vai além da presença online, trata-se de garantir que sua empresa seja encontrada e
+                        lembrada. Nossa equipe transforma ideias em realidade com técnicas inovadoras e estratégias focadas
+                        nos seus objetivos, colocando seu negócio à frente. Conte conosco para fazer do seu site um verdadeiro
+                        facilitador de negócios, com uma abordagem humanizada que conecta sua marca ao cliente de forma autêntica
+                        e impactante.
+                    </p>
+                </div> 
             </div>
             </div>
         </div>

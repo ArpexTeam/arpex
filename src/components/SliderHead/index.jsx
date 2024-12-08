@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import slide1 from '../../img/ImagemHeadline.jpg';
+import slide1 from '../../img/slide1.jpg';
 import background from '../../img/Background.jpg';
 
 
@@ -48,7 +48,7 @@ console.log(background);
     backgroundSize: 'cover',
     backgroundImage: `url(${slide1})`,
     backgroundRepeat: 'no-repeat',
-    backgroundPosition:'60% center'
+    backgroundPosition:'45% center'
   }}>
 
             <div className='absolute bg-gradient-to-r from-black-opacity-06 to-transparent h-[700px] w-full top-0'>

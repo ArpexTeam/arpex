@@ -3,14 +3,14 @@ import image1 from '../../img/foguete.svg';
 import image2 from '../../img/Responsivo.Color1.png';
 import image3 from '../../img/Googleicons 1.png';
 import image4 from '../../img/Suportepng 1.png';
-import bgBackground from '../../img/background4.jpg';
+import bgBackground from '../../img/background5.jpg';
 
-function WebsiteInfo() {
+function WebsiteInfo2() {
 
     
 
     return (
-        <div className="relative pt-20 pb-14 px-10 lg:px-0 border-t-0 border-b-0"
+        <div className="relative w-full pt-20 pb-14 px-10 lg:px-0 border-t-0 border-b-0"
         style={{
             backgroundImage: `url(${bgBackground})`,
             backgroundRepeat: 'no-repeat',
@@ -18,8 +18,8 @@ function WebsiteInfo() {
             
           }}>
             <div className="max-w-[1280px] ml-auto mr-auto flex text-white lg:flex-row w-4/5 gap-y-14 items-center justify-between gap-9">
-           <div className="text-left w-1/2">
-            <h1 className="font-['Roboto-Bold'] text-[48px]">Aqui nascem projetos que fazem a diferença.</h1>
+           <div className="text-left w-3/5">
+            <h1 className="font-['Roboto-Bold'] text-[48px]">Eleve sua marca com um site feito para impressionar.</h1>
             </div>
            <div className="w-fit text-left">
             <p className="w-fit">Uma parceria que tranforma projetos<br/> em grandes realizações</p>
@@ -31,4 +31,4 @@ function WebsiteInfo() {
     );
 }
 
-export default WebsiteInfo;
+export default WebsiteInfo2;

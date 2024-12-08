@@ -6,6 +6,8 @@ import WebsiteInfo from '../components/WebsiteInfo'
 import SliderHead from '../components/SliderHead';
 import WhoAre from '../components/WhoAre';
 import EntrarContato from '../components/EntrarContato';
+import OftenQuestions from '../components/OftenQuestions';
+import WebsiteInfo2 from '../components/WebsiteInfo2';
 
 function App() {
   return (
@@ -13,9 +15,11 @@ function App() {
       <SliderHead/>
       <WhoAre/>
       <HowWork/>
-      <PortifolioHome />
-      <WebsiteInfo />
       <EntrarContato/>
+      <WebsiteInfo />
+      <PortifolioHome />
+      <OftenQuestions/>
+      <WebsiteInfo2/>
     </div>
   );
 }

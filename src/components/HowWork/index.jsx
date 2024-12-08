@@ -1,6 +1,15 @@
 import headset from '../../img/Icons Atendimento.svg';
 import website from '../../img/WebsiteColor1 1.svg';
 import change from '../../img/Alteraçõescolor1 1.svg';
+import foneIcon from '../../img/foneIcon.svg';
+import pageIcon from '../../img/pageIcon.svg';
+import pagePenIcon from '../../img/pagePenIcon.svg';
+import multiSquareIcon from '../../img/multiSquareIcon.svg';
+import internetIcon from '../../img/internetIcon.svg';
+import codeIcon from '../../img/codeIcon.svg';
+import bgBackground from '../../img/background2.jpg'
+
+
 import './App.css';
 import { useRef, useEffect, useState } from 'react';
 
@@ -77,49 +86,85 @@ function HowWork() {
     }, [isVisibleC1, isVisibleC2, isVisibleC3, isVisibleC4]);
 
     return (
-        <div className="w-full bg-black pt-28 md:pt-52">
-            <div className="w-full ml-auto mr-auto">
-                <h1 className="text-[48px] font-['Roboto-Bold'] text-pink-rgb">Como trabalhamos</h1>
+        <div className="w-full pt-28 md:pt-52 pb-52 relative overflow-x-hidden"
+        style={{
+            backgroundSize: 'cover',
+            backgroundImage: `url(${bgBackground})`,
+            backgroundRepeat: 'no-repeat',
+          }}
+          >
+            <div className="max-w-[1280px] ml-auto mr-auto">
+                <h1 className="text-[48px] font-['Roboto-Bold'] text-pink-rgb mb-28">Metodologia</h1>
 
-                <div ref={elementRef1} className="mt-10 w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-r from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
-                    <div className="items-center gap-12 h-[inherit] w-full justify-center lg:justify-normal lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
-                        <img src={headset} className="w-40" />
-                        <div className="text-white sm:text-left w-4/5 lg:w-1/2">
-                            <h1 className="text-[40px] font-['Roboto-Bold']">BRIEFING</h1>
-                            <p className="text-[20px] font-['Roboto-Light']">Após a contratação do serviço, agendamos uma reunião de briefing para juntos elaborarmos um documento que detalhe todas as necessidades do projeto. No fim dessa reunião, estabelecemos como o cliente nos fornecerá o material necessário para o site.</p>
-                        </div>
+                <div className='flex w-11/12 ml-auto gap-14'>
+                <hr className='absolute w-full border-[#757575] max-w-[1280px] mt-10'/>
+                <div className='text-white text-left w-2/12'>
+                    <div className='mb-6 rounded-full bg-[#1A1A1A] border-[#00D073] border-2 w-20 h-20 flex justify-center drop-shadow-[0_0px_20px_rgba(0,208,115,1)]'>
+                        <img src={foneIcon} className='w-1/2'/>
                     </div>
+                    <h1 className='font-["Roboto-Medium"] text-[26px]'>Planejamento Estratégico</h1><br/>
+                    <p className='font-["Roboto-Regular"] text-[14px]'>
+                        Entendimento completo do seu negócio e dos objetivos do site para alinhar expectativas
+                        e direcionar o projeto.
+                    </p>
                 </div>
 
-                <div ref={elementRef2} className="w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-l ml-auto from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
-                    <div className="items-center gap-12 h-[inherit] w-full justify-center lg:justify-end lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
-                        <div className="text-white sm:text-right w-4/5 lg:w-1/2 order-2 sm:order-1">
-                            <h1 className="text-[40px] font-['Roboto-Bold']">EXECUÇÃO</h1>
-                            <p className="text-[20px] font-['Roboto-Light']">Durante a execução, utilizamos o documento de briefing e os materiais fornecidos pelo cliente para criar o site de acordo com o escopo do projeto.</p>
-                        </div>
-                        <img src={website} className="w-40 order-1 sm:order-2" />
+                <div className='text-white text-left w-2/12'>
+                    <div className='mb-6 rounded-full bg-[#1A1A1A] border-[#00D073] w-20 h-20 flex justify-center border-2 drop-shadow-[0_0px_20px_rgba(0,208,115,1)]'>
+                        <img src={pageIcon} className='w-1/2'/>
                     </div>
+                    <h1 className='font-["Roboto-Medium"] text-[26px]'>Estruturação do Conteúdo</h1><br/>
+                    <p className='font-["Roboto-Regular"] text-[14px]'>
+                        Organização lógica e clara das informações para facilitar a navegação e maximizar 
+                        o impacto da mensagem.
+                    </p>
                 </div>
 
-                <div ref={elementRef3} className="w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-r from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
-                    <div className="items-center gap-12 h-[inherit] py-4 w-full justify-center lg:justify-normal lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
-                        <img src={change} className="w-40" />
-                        <div className="text-white sm:text-left w-4/5 lg:w-1/2">
-                            <h1 className="text-[40px] font-['Roboto-Bold']">ALTERAÇÕES</h1>
-                            <p className="text-[20px] font-['Roboto-Light']">Processo típico em qualquer projeto, agora é a hora do cliente examinar nosso trabalho e propor as alterações necessárias.</p>
-                        </div>
+                <div className='text-white text-left w-2/12'>
+                    <div className='mb-6 rounded-full bg-[#1A1A1A] border-[#00D073] w-20 h-20 flex justify-center border-2 drop-shadow-[0_0px_20px_rgba(0,208,115,1)]'>
+                        <img src={pagePenIcon} className='w-1/2'/>
                     </div>
+                    <h1 className='font-["Roboto-Medium"] text-[26px]'>Front-end</h1><br/>
+                    <p className='font-["Roboto-Regular"] text-[14px]'>
+                        Desenvolvimento de um layout atraente e alinhado com a identidade da sua marca para
+                        engajar o usuário.
+                    </p>
                 </div>
 
-                <div ref={elementRef4} className="w-0 transition-all overflow-hidden sm:overflow-visible duration-1000 bg-gradient-to-l ml-auto from-white-rgb-02 to-black-rgb-01 h-[600px] sm:h-72 lg:h-64 xl:h-52 2xl:h-48">
-                    <div className="items-center gap-12 h-[inherit] py-4 w-full justify-center lg:justify-end lg:w-[calc(100vw-20%)] flex flex-col sm:flex-row ml-auto mr-auto left-0 right-0 sm:absolute max-w-[1280px]">
-                        <div className="text-white sm:text-right w-4/5 lg:w-1/2 order-2 sm:order-1">
-                            <h1 className="text-[40px] font-['Roboto-Bold']">FINALIZAÇÃO E PUBLICAÇÃO</h1>
-                            <p className="text-[20px] font-['Roboto-Light']">Com a aprovação do projeto, publicamos o site no endereço final do cliente, enviamos o backup e uma planilha com os dados de acesso.</p>
-                        </div>
-                        <img src={website} className="w-40 order-1 sm:order-2" />
+                <div className='text-white text-left w-2/12 '>
+                    <div className='mb-6 rounded-full bg-[#1A1A1A] border-[#00D073] w-20 h-20 flex justify-center border-2 drop-shadow-[0_0px_20px_rgba(0,208,115,1)]'>
+                        <img src={codeIcon} className='w-1/2'/>
                     </div>
+                    <h1 className='font-["Roboto-Medium"] text-[26px]'>Desenvolvimento Interativo</h1><br/>
+                    <p className='font-["Roboto-Regular"] text-[14px]'>
+                        Programação e implementação de funcionalidades que trazem dinamismo e usabilidade 
+                        ao site.
+                    </p>
                 </div>
+
+                <div className='text-white text-left w-2/12'>
+                    <div className='mb-6 rounded-full bg-[#1A1A1A] border-[#00D073] w-20 h-20 flex justify-center border-2 drop-shadow-[0_0px_20px_rgba(0,208,115,1)]'>
+                        <img src={multiSquareIcon} className='w-1/2'/>
+                    </div>
+                    <h1 className='font-["Roboto-Medium"] text-[26px]'>Validação e Testes</h1><br/>
+                    <p className='font-["Roboto-Regular"] text-[14px]'>
+                        Testes minuciosos para assegurar que todas as funcionalidades estejam perfeitas
+                        em diferentes dispositivos e navegadores.
+                    </p>
+                </div>
+
+                <div className='text-white text-left w-2/12'>
+                    <div className='mb-6 rounded-full bg-[#1A1A1A] border-[#00D073] w-20 h-20 flex justify-center border-2 drop-shadow-[0_0px_20px_rgba(0,208,115,1)]'>
+                        <img src={internetIcon} className='w-1/2'/>
+                    </div>
+                    <h1 className='font-["Roboto-Medium"] text-[26px]'>Publicação e Suporte</h1><br/>
+                    <p className='font-["Roboto-Regular"] text-[14px]'>
+                        Lançamento do site com todo o suporte necessário para garantir sua performance e manter a
+                        qualidade ao longo do tempo.
+                    </p>
+                </div>
+                </div>
+
             </div>
         </div>
     );

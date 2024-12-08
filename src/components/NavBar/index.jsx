@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import logo from '../../img/Logo HeadLine.svg'
+import logo from '../../img/LogoArpex.png'
 import './App.css'
 import { Link } from 'react-router-dom'
+import telephone from '../../img/telephoneIcon.svg'
 
 function NavBar(){
 
@@ -12,7 +13,7 @@ function NavBar(){
         console.log(navBarMobile);
     }
     return(
-        <div className="z-50 bg-gradient-to-r from-black-opacity justify-center to-red-rgb-opacity w-full h-20 fixed backdrop-blur-sm">
+        <div className="z-50 bg-gradient-to-r from-black-opacity justify-center bg-black w-full h-20 fixed backdrop-blur-sm">
             <div className='w-4/5 h-full flex max-w-[1280px] ml-auto mr-auto'>
             <div className="w-full h-full flex items-center justify-between">
             <div>
@@ -28,14 +29,14 @@ function NavBar(){
                     <ul className='list-none flex text-white gap-4 xl:gap-14 font-["Roboto-Medium"] font-light'>
                         <li className='cursor-pointer'><Link to="/">HOME</Link></li>
                         <li className='cursor-pointer'><Link to="/services">SERVIÇOS</Link></li>
-                        <li className='cursor-pointer'><Link to="/portfolio">PORTIFÓLIO</Link></li>
+                        <li className='cursor-pointer'><Link to="/portfolio">PROJETOS</Link></li>
                         <li className='cursor-pointer'><Link to="/about">SOBRE NÓS</Link></li>
                         <li className='cursor-pointer'><Link to="/contact">CONTATO</Link></li>
                     </ul>
                 </nav>
             </div>
-            <div className='lg:block hidden'>
-                <a href='https://wa.me/5519998524426' target='__blank'><button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></a>
+            <div className='lg:flex gap-3 items-center justify-center hidden text-white'>
+            <img src={telephone}/><a href='https://wa.me/5519998524426' target='__blank'>(19) 93865-1540</a>
             </div>
             </div>
             
@@ -48,7 +49,7 @@ function NavBar(){
                         <li className='cursor-pointer' onClick={expandNav}><Link to="/portfolio">PORTIFÓLIO</Link></li>
                         <li className='cursor-pointer' onClick={expandNav}><Link to="/about">SOBRE NÓS</Link></li>
                         <li className='cursor-pointer' onClick={expandNav}><Link to="/contact">CONTATO</Link></li>     
-                        <li><button className='bg-[#ED4264] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></li>
+                        <li><button className='bg-[#00cf77] hover:opacity-80 py-1 px-6 text-white font-["Roboto-Medium"] rounded-lg'>ORÇAMENTO</button></li>
 
                     </ul>
                 </nav>

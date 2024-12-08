@@ -1,9 +1,6 @@
 .titulo::after{
     content: '';
-    width: 90%;
-    height: 2px;
-    background-color: rgba(237, 66, 100, 1);
-    display: block;
+    display: none!important;
     margin-left: auto;
     margin-right: auto;
     margin-top: -10px;
