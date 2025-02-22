@@ -2,7 +2,6 @@
 import { JSX, useEffect, useRef, useState } from 'react';
 import slide1 from '../../../public/images/slide1.jpg';
 import slide2 from '../../../public/images/Group 43.png';
-import background from '../../../public/images/Background.jpg';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
