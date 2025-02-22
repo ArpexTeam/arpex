@@ -1,9 +1,0 @@
-.sizeGrayLine{
-    width: 58.3%;
-}
-
-@media(max-width:640px) {
-    .sizeGrayLine{
-        width: 100%;
-    }
-}
