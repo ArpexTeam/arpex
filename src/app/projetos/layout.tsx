@@ -7,7 +7,7 @@ export default function ContactLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className={`flex flex-col items-center justify-between w-full h-full`}>
+        <div className={`flex flex-col items-center overflow-x-auto justify-between w-full h-full`}>
             <Navbar item="projetos" />
             {children}
             <Footer />

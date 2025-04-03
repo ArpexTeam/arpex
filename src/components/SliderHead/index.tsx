@@ -41,7 +41,7 @@ function SliderHead(): JSX.Element {
 
   return (
     <section
-      className="w-full h-[700px]"
+      className="w-full h-[700px] "
       style={{
         backgroundSize: 'cover',
         backgroundImage: `url('../../../public/images/slide1.jpg')`,
@@ -53,7 +53,7 @@ function SliderHead(): JSX.Element {
       <Image src={slide2} alt='' className='flex sm:hidden absolute h-min w-full' />
       <div className='bg-gradient-to-r from-black-opacity-06 to-transparent h-[700px] w-full top-0'>
         <div className='relative top-48 md:top-1/3 text-white text-[25px] sm:text-[36px] text-left w-4/5 ml-auto mr-auto max-w-[1280px]'>
-          <div ref={elementRef} className='w-full md:w-4/5 lg:w-3/5 2xl:w-1/2 transition-all duration-1000 -ml-44 opacity-0'>
+          <div ref={elementRef} className='w-full  md:w-4/5 lg:w-3/5 2xl:w-1/2 transition-all duration-1000 -ml-44 opacity-0'>
             <h1 className='font-["LT Renovate"] '>
               DEIXE SUA MARCA NA WEB COM UM<br />
               SITE PROJETADO EXCLUSIVAMENTE<br />
@@ -63,8 +63,8 @@ function SliderHead(): JSX.Element {
               Agência de criação de sites web, mobile e plataformas digitais para empresas, focada em inovação e resultados excepcionais.
             </p>
             <a onClick={() => route.push("/contatos")} target='__blank'>
-              <button className='px-5 py-2 text-[20px] mt-4 sm:mt-0 hover:bg-black hover:border-pink-rgb hover:text-pink-rgb border-2 border-transparent bg-pink-rgb rounded-md'>
-                Peça um Orçamento
+              <button className='px-5 py-2 text-[20px] mt-4 sm:mt-0 bg-[#00CF78]  text-[#0B3A27] font-semibold rounded-md'>
+                Faça um Orçamento
               </button>
             </a>
           </div>

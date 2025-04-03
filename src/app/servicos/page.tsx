@@ -7,7 +7,7 @@ import grid from "../../../public/icons/Vector-3.svg"
 function ContactScreen() {
     return (
         <div className="flex w-full h-full flex-col items-center bg-gradient-diagonal">
-            <div className="">
+            <div className="flex flex-col">
                 <div className="flex flex-col w-auto   py-10">
                     <span className="text-[48px] font-bold text-[#00CF78] px-2">Serviços</span>
                     <span className="text-[20px] text-[#D3D3D3] px-2 ">Oferecemos soluções criativas para levar seu site ao próximo nível!</span>

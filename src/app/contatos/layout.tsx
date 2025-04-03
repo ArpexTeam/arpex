@@ -8,7 +8,7 @@ export default function ContactLayout({
 }>) {
     return (
 
-        <div className={`flex flex-col w-screen h-screen items-center justify-between bg-gradient-diagonal`}>
+        <div className={`flex flex-col w-screen h-screen overflow-x-auto items-center justify-between bg-gradient-diagonal`}>
             <Navbar item="contato" />
             {children}
             <Footer/>

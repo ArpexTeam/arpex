@@ -8,7 +8,7 @@ export default function ContactLayout({
 }>) {
     return (
 
-        <div className={`flex flex-col w-screen h-screen items-center justify-between`}>
+        <div className={`flex flex-col w-full overflow-x-auto h-screen items-center justify-between`}>
             <Navbar item="about-us" />
             {children}
             <Footer/>

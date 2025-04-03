@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 function ContactScreen() {
     const route = useRouter();
     return (
-        <div className="flex flex-col w-full h-full  ">
+        <div className="flex flex-col w-full h-auto">
             <div className="flex w-full h-fit justify-center items-center bg-[#03120C]  py-10">
                 <div className="flex w-full justify-between items-center max-w-[1280px]">
                     <span className="text-white text-[60px] w-[600px] ">Muito mais do que uma agência!</span>
@@ -24,7 +24,7 @@ function ContactScreen() {
                             Faça um orçamento
                         </button>
                     </div>
-                    <Image src={aboutus} alt="" className="h-fit    " />
+                    <Image src={aboutus} alt="" width={580} height={487} className="h-fit" />
                 </div>
             </div>
         </div>
