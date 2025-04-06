@@ -35,7 +35,7 @@ function Navbar({ item }: NavbarProps) {
                     <span className="cursor-pointer font-bold text-[15px]">(19) 9 3865-1540</span>
                 </div>
 
-                <div className="navbar-end sm:hidden">
+                <div className="flex navbar-end sm:hidden justify-end ">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                             <svg

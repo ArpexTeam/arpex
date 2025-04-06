@@ -41,7 +41,7 @@ function SliderHead(): JSX.Element {
 
   return (
     <section
-      className="w-full h-[700px] "
+      className="w-full h-[700px] bg-black "
       style={{
         backgroundSize: 'cover',
         backgroundImage: `url('../../../public/images/slide1.jpg')`,

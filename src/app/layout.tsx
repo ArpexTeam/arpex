@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`flex flex-col h-screen w-screen overflow-x-hidden `}>
+      <body className={`flex flex-col h-screen w-screen overflow-x-hidden bg-black `}>
         {children}
       </body>
     </html>
