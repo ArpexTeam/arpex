@@ -25,7 +25,7 @@ function ContactScreen() {
         setMessage("");
 
         const templateParams = {
-            to_email: "contatoarpextech@gmail.com",
+            to_email: "danieldantefm@gmail.com",
             nome: formData.nome,
             sobrenome: formData.sobrenome,
             email: formData.email,
