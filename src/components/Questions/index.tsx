@@ -21,7 +21,7 @@ const questions = [
 
 function Questions() {
     return (
-        <div className='flex w-full  flex-col mt-10 text-white bg-black'>
+        <div className='flex w-full  flex-col  text-white bg-black'>
             <div className=" max-w-[1280px] self-center w-full px-4">
                 <div className="mt-10">
                     <span className='text-[48px] text-[#00CF78]'> DÚVIDAS FRENQUENTES</span>

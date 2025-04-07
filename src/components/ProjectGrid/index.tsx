@@ -2,7 +2,7 @@ import ProjectCard from "./card";
 
 function ProjectGrid() {
     return (
-        <div className="W-full bg-transparent relative h-[65vh] flex">
+        <div className="w-full bg-transparent relative h-[65vh] flex justify-center">
 
             <div className="overflow-y-scroll 
   ">
