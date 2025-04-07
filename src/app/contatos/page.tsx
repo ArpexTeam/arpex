@@ -36,7 +36,7 @@ function ContactScreen() {
 
         try {
             await emailjs.send(
-                "service_qg2254f", 
+                "service_qg2254f",
                 "template_425g7uc",
                 templateParams,
                 "5-1pFEKd6vGBg5N_4"
@@ -75,8 +75,8 @@ function ContactScreen() {
                     <Input label="Observações" text={formData.observacoes} setText={handleChange("observacoes")} />
                 </div>
 
-                <button 
-                    className="bg-[#00CF78] w-min self-center px-10 py-2 text-white disabled:opacity-50" 
+                <button
+                    className="bg-[#00CF78] w-min self-center px-10 py-2 text-white disabled:opacity-50"
                     onClick={handleSubmit}
                     disabled={loading}
                 >

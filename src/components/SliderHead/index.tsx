@@ -41,17 +41,16 @@ function SliderHead(): JSX.Element {
 
   return (
     <section
-      className="w-full h-[700px] bg-black "
+      className="w-full bg-black h-full -mb-14"
       style={{
         backgroundSize: 'cover',
-        backgroundImage: `url('../../../public/images/slide1.jpg')`,
+        backgroundImage: `url('/images/backgound.png')`,
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '45% center'
+        
       }}
     >
-      <Image src={slide1} alt='' className='hidden sm:flex absolute top-0 h-full w-full z-0' />
-      <Image src={slide2} alt='' className='flex sm:hidden absolute h-min w-full' />
-      <div className='bg-gradient-to-r from-black-opacity-06 to-transparent h-[700px] w-full top-0'>
+
+      <div className='bg-gradient-to-r from-black-opacity-06 to-transparent h-[700px] w-full '>
         <div className='relative top-48 md:top-1/3 text-white text-[25px] sm:text-[36px] text-left w-4/5 ml-auto mr-auto max-w-[1280px]'>
           <div ref={elementRef} className='w-full  md:w-4/5 lg:w-3/5 2xl:w-1/2 transition-all duration-1000 -ml-44 opacity-0'>
             <h1 className='font-["LT Renovate"] '>
