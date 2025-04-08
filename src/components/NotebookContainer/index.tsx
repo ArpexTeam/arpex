@@ -1,6 +1,5 @@
 "use client"
 import { JSX, useEffect, useRef, useState } from 'react';
-import { useRouter } from 'next/navigation';
 function NotebookContainer(): JSX.Element {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const elementRef = useRef<HTMLDivElement | null>(null);
