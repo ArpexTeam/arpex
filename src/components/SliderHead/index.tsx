@@ -1,9 +1,6 @@
 "use client"
 import { JSX, useEffect, useRef, useState } from 'react';
-import slide1 from '../../../public/images/slide1.jpg';
-import slide2 from '../../../public/images/Group 43.png';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 
 function SliderHead(): JSX.Element {
   const [isVisible, setIsVisible] = useState<boolean>(false);

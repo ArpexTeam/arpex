@@ -1,12 +1,9 @@
 "use client"
 import { JSX, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-
 function NotebookContainer(): JSX.Element {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const elementRef = useRef<HTMLDivElement | null>(null);
-  const route = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
